@@ -3,7 +3,7 @@ from joblib import load
 import pandas as pd
 
 # Load your trained pipeline
-pipeline = load('hdb_fam_streamlit_app/housing_price_prediction_pipeline.joblib')
+pipeline = load('housing_price_prediction_pipeline.joblib')
 
 with st.form(key='input_form'):
     flat_type = st.selectbox('Flat Type', options=['3 ROOM', '4 ROOM', '5 ROOM', 'EXECUTIVE', 'MULTI-GENERATION'])
